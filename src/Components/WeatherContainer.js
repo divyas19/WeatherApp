@@ -15,8 +15,8 @@ export default function PlaceBox() {
 
   const fetchWeatherForMumbai = async () => {
     try {
-      // const url = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&county=IN&appid=5d59114180d91ab77ece2f9b8f901a1d`;
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=5d59114180d91ab77ece2f9b8f901a1d`;
+      // const url = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&county=IN&appid=apiKey`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=apiKey`;
       const data = await fetch(url);
       const parsedData = await data.json();
 
@@ -56,9 +56,9 @@ export default function PlaceBox() {
   const giveWeather = async (e) => {
     e.preventDefault();
     try {
-      // const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeSearch},IN&appid=5d59114180d91ab77ece2f9b8f901a1d`;
-      // const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeSearch}&county=IN&appid=5d59114180d91ab77ece2f9b8f901a1d`;
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeSearch}&appid=5d59114180d91ab77ece2f9b8f901a1d`;
+      // const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeSearch},IN&appid=apiKey`;
+      // const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeSearch}&county=IN&appid=apiKey`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeSearch}&appid=apiKey`;
 
       console.log("Place " + place);
       console.log("url " + url);

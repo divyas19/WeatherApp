@@ -4,8 +4,6 @@ import PlaceBox from "../src/Components/WeatherContainer";
 import Navbar from "../src/Components/Navbar";
 
 function App() {
-  const apiKeyVal = process.env.REACT_APP_WEATHER_API;
-  console.log(apiKeyVal);
   return (
     <>
       <Router>
