@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply h-10 p-3 border-2  border-red-400 hover:border-green-700 font-light  text-xs md:text-xl text-nowrap  text-red-600 hover:text-green-700   rounded-full cursor-pointer  flex justify-center items-center  transition ease-in delay-75 hover:bg-green-100;
+}
