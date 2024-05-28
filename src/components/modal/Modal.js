@@ -1,7 +1,7 @@
 import React from 'react'
-import { useData } from './DataContent';
+import { useData } from '../../contexts/DataContext';
 
-export default function Modal({ value, handleCloseModal }) {
+export default function Modal({ handleCloseModal }) {
 
     const { data } = useData();
     const valueInF = data.main.temp

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useAuth } from './AuthProvider';
+import { useAuth } from '../contexts/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const RegisterPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const { signUp } = useAuth();
@@ -47,4 +47,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default RegisterPage;

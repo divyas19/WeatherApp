@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useAuth } from '../Authentication/AuthProvider';
+import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import WeatherContainer from './WeatherContainer';
-import Modal from './Modal';
+import WeatherContainer from '../components/container/WeatherContainer';
+import Modal from '../components/modal/Modal';
 
-export default function Home() {
+export default function HomePage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { logOut } = useAuth();
     const navigate = useNavigate();
@@ -41,7 +41,7 @@ export default function Home() {
             </main>
             {isModalOpen && (
                 <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-75 z-30 flex items-center justify-center">
-                    <Modal value={23} handleCloseModal={handleCloseModal} />
+                    <Modal handleCloseModal={handleCloseModal} />
                 </div>
             )}
         </div>

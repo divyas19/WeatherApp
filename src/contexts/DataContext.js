@@ -11,12 +11,13 @@ export function useData() {
 
 
 
-export default function DataProvider({ children, condition }) {
+export default function DataProvider({ children }) {
 
     const [placeSearch, setPlaceSearch] = useState('Delhi');
 
+    const apiKey = process.env.REACT_APP_WEATHER_API;
     const fetchWeatherData = async (placeSearch) => {
-        const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${placeSearch}&appid=5d59114180d91ab77ece2f9b8f901a1d`);
+        const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${placeSearch}&appid=${apiKey}`);
         return result.data;
     };
 

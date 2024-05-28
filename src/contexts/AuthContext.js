@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
     const value = {
         currentUser,
         signIn,
-        signUp, // Include the signUp function in the context value
+        signUp,
         logOut,
     };
 

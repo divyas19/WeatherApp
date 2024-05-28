@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import mainPageImage from "../Images/mainPageImage.jpg";
+import mainPageImage from "../assets/images/main-page-image.jpg";
 
-export default function MainHome() {
+export default function MainHomePage() {
     return (
         <div className=' h-screen overflow-hidden flex flex-col'>
             <div className='h-20 w-full fixed top-0 p-0 md:p-5  bg-white  flex justify-between items-center '>

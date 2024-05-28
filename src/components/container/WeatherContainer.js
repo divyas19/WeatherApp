@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useData } from "../Components/DataContent";
-import loading from "../Images/loading.gif";
+import { useData } from "../../contexts/DataContext";
+import loading from "../../assets/images/loading.gif";
 
 export default function WeatherContainer() {
     const { data, placeSearch, setPlaceSearch, isLoading, isError, isFetching } =
